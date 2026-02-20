@@ -1,0 +1,10 @@
+stages:
+  - deploy
+
+deploy_update:
+  stage: deploy
+  script:
+    - echo "Triggering Ansible self-update simulation"
+    - ansible-playbook ansible/update.yml
+  tags:
+    - devops

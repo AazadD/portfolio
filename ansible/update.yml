@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Copy HTML app to web directory
+      copy:
+        src: ../app/
+        dest: /var/www/html/
+        owner: www-data
+        group: www-data
+        mode: '0755'
+
+    - name: Restart web service
+      service:
+        name: apache2
+        state: restarted
