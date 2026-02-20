@@ -20,10 +20,10 @@ This portfolio demonstrates my hands-on DevOps skills:
 ## How to Run Locally
 1. Ensure Apache and PHP installed
 2. Run playbook:
- ```bash
+  ```bash
 ansible-playbook ansible/update.yml
-
- ## Nginx Reverse Proxy with Domain
+```
+## Nginx Reverse Proxy with Domain
 - Configured Nginx on Ubuntu to serve applications through a real domain
 - Example workflow:
   - Application runs on internal port (e.g., 8081)
@@ -34,7 +34,7 @@ ansible-playbook ansible/update.yml
   - Real-world server deployment
 
 E.g.
-
+```
 server {
     listen 80;
     server_name yourdomain.com;
@@ -46,3 +46,4 @@ server {
     }
 }
 
+```
